@@ -1,0 +1,112 @@
+:root{
+    --bg-gray: #4d423b;
+}
+p {
+    font-size: 20px;
+    color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html,
+body {
+    z-index: -1;
+    overflow: hidden;
+    height: 100%;
+    background-color: var(--bg-gray);
+}
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+.container {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#userInput {
+    position: absolute;
+    top: calc(66.667% + 20px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 75px;
+}
+
+.player1 {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 33.3%;
+    transform: translate(-50%, -50%);
+}
+
+.player2 {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 66.6667%;
+    transform: translate(-50%, -50%);
+}
+.result {
+    font-size: 35px;
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+}
+
+#prompt {
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    right: 50%;
+    transform: translate(+20%, -150%);
+}
+
+.heart {
+    display: inline-block;
+    margin-right: 5px;
+  }
+.heart img{
+    width: 20px;
+    height: 20px;
+}
+#healthContainer1 {
+    position: absolute;
+    top: 50%;
+    left: 33.3%;
+    transform: translate(-40%, -50%);
+}
+
+#healthContainer2 {
+    position: absolute;
+    top: 50%;
+    left: 66.6667%;
+    transform: translate(-40%, -50%);
+}
+
+#arrow img{
+    position: relative;
+    align-items: center;
+    display: flex;
+    top: 20%;
+    left: 45%;
+    width: 200px; 
+    z-index: 0;
+}
+
+
+#bomb-image {
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    width: 200px; 
+    height: auto; 
+}

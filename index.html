@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bomb Party</title>
+</head>
+<body>
+    <div class="container">
+        <button type="button" onclick="restart()"> Restart </button>
+        <input type="text" id="userInput" name="userInput">
+        <div class="content">
+            <p class="player1"> Player1</p>
+            <p class="player2"> Player2</p>
+            <!-- <p id="p1Health"> 0</p>
+            <p id="p2Health"> 0</p> -->
+            <p id="prompt"> ""</p>
+            <div id="healthContainer1"></div>
+            <div id="healthContainer2"></div>
+        </div>
+        <div id="arrow"></div>
+    </div>
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/008/505/814/small/bomb-color-illustration-png.png" alt="bomb" id="bomb-image">
+</body>
+<script src="game.js"></script>
+</html>
